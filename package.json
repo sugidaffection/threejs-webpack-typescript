@@ -9,7 +9,7 @@
     "build-dev": "webpack --mode=development --config=webpack.config.dev.js",
     "ts-build": "tsc --build --clean tsconfig.json"
   },
-  "license": "Apache-2.0",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/sugidaffection/threejs-webpack-typescript.git"
