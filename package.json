@@ -1,0 +1,11 @@
+{
+  "name": "mmorpg3d",
+  "version": "1.0.0",
+  "description": "threejs 3d game mmorpg",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "developer.sugiono@gmail.com",
+  "license": "ISC"
+}
