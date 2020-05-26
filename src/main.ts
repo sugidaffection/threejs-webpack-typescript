@@ -1,6 +1,8 @@
-import { PerspectiveCamera, Scene, WebGLRenderer } from 'three';
+import { PerspectiveCamera } from 'three/src/cameras/PerspectiveCamera';
+import { WebGLRenderer } from 'three/src/renderers/WebGLRenderer';
+import { Scene } from 'three/src/scenes/Scene';
 
-export class MainApp {
+class MainApp {
   private readonly scene: Scene = new Scene();
   private readonly renderer: WebGLRenderer = new WebGLRenderer();
   private readonly camera: PerspectiveCamera = new PerspectiveCamera(75, window.innerWidth / window.innerHeight, .1, 1000);
@@ -28,6 +30,10 @@ export class MainApp {
   update(): void{
     this.renderer.render(this.scene, this.camera);
   }
+
+  public static main() {
+    new MainApp();
+  }
 }
 
-new MainApp()
+window.onload = () => MainApp.main()
