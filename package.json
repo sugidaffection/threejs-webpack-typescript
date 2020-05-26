@@ -1,11 +1,25 @@
 {
-  "name": "mmorpg3d",
+  "name": "threejs-webpack-typescript",
   "version": "1.0.0",
-  "description": "threejs 3d game mmorpg",
-  "main": "main.js",
+  "description": "threejs typescript",
+  "main": "build/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server",
+    "build": "webpack --mode=production"
   },
-  "author": "developer.sugiono@gmail.com",
-  "license": "ISC"
+  "author": {
+    "name": "Sugiono",
+    "email": "developer.sugiono@gmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.116.1",
+    "typescript": "^3.9.3"
+  },
+  "devDependencies": {
+    "ts-loader": "^7.0.5",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  }
 }
