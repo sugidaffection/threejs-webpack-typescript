@@ -15,11 +15,7 @@ module.exports = {
   },
   devtool: false,
   optimization: {
-    minimize: true,
-    splitChunks: {
-      minSize: 10000,
-      maxSize: 250000
-    }
+    minimize: true
   },
   performance: {
     hints: false
