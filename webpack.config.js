@@ -1,8 +1,9 @@
 const path = require('path')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/main.ts',
+  entry: './src/main',
 
   output: {
     filename: 'bundle.js',

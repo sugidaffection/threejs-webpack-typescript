@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack --mode=production --config=webpack.config.prod.js",
-    "build-dev": "webpack --mode=development --config=webpack.config.dev.js",
+    "build-dev": "webpack --mode=development --config=webpack.config.js",
     "ts-build": "tsc --build --clean tsconfig.json"
   },
   "license": "MIT",
