@@ -4,10 +4,10 @@
   "description": "threejs typescript",
   "main": "build/main.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "npm run ts-build && webpack-dev-server",
     "build": "webpack --mode=production --config=webpack.config.prod.js",
     "build-dev": "webpack --mode=development --config=webpack.config.js",
-    "ts-build": "tsc --build --clean tsconfig.json"
+    "ts-build": "tsc --build tsconfig.json"
   },
   "license": "MIT",
   "repository": {
