@@ -11,9 +11,11 @@ class MainApp {
   constructor() {
     this.setup();
     window.addEventListener('resize', () => this.resizeHandler());
-    window.addEventListener('dblclick', () => this.canvas.requestFullscreen());
-    window.addEventListener('click', () => this.canvas.requestPointerLock());
-    this.renderer.setAnimationLoop.bind(this.update);
+    window.addEventListener('click', () => {
+      this.canvas.requestPointerLock();
+      this.canvas.requestFullscreen();
+    });
+    this.renderer.setAnimationLoop(this.update.bind(this));
   }
 
   setup(): void {
